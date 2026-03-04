@@ -1,0 +1,1 @@
+const baseUrl = \"http://localhost:5000/api/statusitems\";\nexport async function getStatusItems() {\n  const res = await fetch(baseUrl);\n  // TODO: handle errors\n  return res.json();\n}\n// TODO: add create/update/delete helpers
