@@ -1,0 +1,1 @@
+import React from 'react';\n// TODO: add router and pages\nexport default function App() {\n  return (\n    <div className=\"layout\">\n      <aside>OpsPulse Admin</aside>\n      <main>Dashboard goes here</main>\n    </div>\n  );\n}
