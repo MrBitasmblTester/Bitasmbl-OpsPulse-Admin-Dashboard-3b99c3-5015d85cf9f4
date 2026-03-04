@@ -1,0 +1,1 @@
+namespace OpsPulse.Api.Models;\npublic class StatusItem {\n    public int Id { get; set; }\n    public string Name { get; set; } = string.Empty;\n    public string Status { get; set; } = \"Healthy\";\n    public DateTime LastCheckedUtc { get; set; } = DateTime.UtcNow;\n}
