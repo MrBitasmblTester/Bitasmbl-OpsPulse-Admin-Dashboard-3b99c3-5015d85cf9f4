@@ -1,0 +1,1 @@
+using Microsoft.AspNetCore.Mvc;\nusing OpsPulse.Api.Models;\n[ApiController]\n[Route("api/[controller]")]\npublic class StatusItemsController : ControllerBase {\n  // TODO: inject repo or use in-memory list\n  [HttpGet]\n  public IActionResult GetAll() => Ok(new List<StatusItem>());\n}
