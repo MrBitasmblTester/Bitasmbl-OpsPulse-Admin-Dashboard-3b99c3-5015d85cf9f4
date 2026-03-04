@@ -1,0 +1,1 @@
+// using Microsoft.AspNetCore.Builder;\nvar builder = WebApplication.CreateBuilder(args);\nvar app = builder.Build();\n// TODO: add services (DbContext, CORS) here\napp.MapGet("/api/health", () => Results.Ok("OK"));\napp.Run();
