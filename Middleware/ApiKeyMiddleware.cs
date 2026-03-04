@@ -1,0 +1,1 @@
+using Microsoft.AspNetCore.Http;\npublic class ApiKeyMiddleware {\n  private readonly RequestDelegate _next;\n  private const string KeyHeader = \"X-API-KEY\";\n  public ApiKeyMiddleware(RequestDelegate next) => _next = next;\n  public async Task InvokeAsync(HttpContext ctx) {\n    // TODO: validate key from config\n    await _next(ctx);\n  }\n}
