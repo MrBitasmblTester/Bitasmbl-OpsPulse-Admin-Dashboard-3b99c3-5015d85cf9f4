@@ -1,0 +1,1 @@
+import React, { useEffect, useState } from 'react';\nimport { getStatusItems } from '../api/statusItemsApi';\nexport default function StatusItemsTable() {\n  const [items, setItems] = useState([]);\n  useEffect(() => { getStatusItems().then(setItems); }, []);\n  return (<table>{items.map(i => <tr key={i.id}><td>{i.name}</td><td>{i.status}</td></tr>)}</table>);\n}
