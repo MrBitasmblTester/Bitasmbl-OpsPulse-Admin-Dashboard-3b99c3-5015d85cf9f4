@@ -1,0 +1,1 @@
+import React from 'react';\nexport default function StatusItemsFilter({ value, onChange }) {\n  return (\n    <input\n      placeholder=\"Filter by name or status...\"\n      value={value}\n      onChange={e => onChange(e.target.value)}\n    />\n  );\n}
